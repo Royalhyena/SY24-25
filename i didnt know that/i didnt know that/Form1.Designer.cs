@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -128,11 +129,17 @@
             this.button98 = new System.Windows.Forms.Button();
             this.button99 = new System.Windows.Forms.Button();
             this.button100 = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
+            this.Flagbox = new System.Windows.Forms.PictureBox();
+            this.Minebox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Flagbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minebox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(85, 12);
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(111, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 0;
@@ -142,6 +149,7 @@
             // 
             // button2
             // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(111, 53);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 40);
@@ -152,6 +160,7 @@
             // 
             // button3
             // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(111, 99);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 40);
@@ -162,6 +171,7 @@
             // 
             // button4
             // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Location = new System.Drawing.Point(111, 145);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 40);
@@ -172,6 +182,7 @@
             // 
             // button5
             // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Location = new System.Drawing.Point(111, 191);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
@@ -182,6 +193,7 @@
             // 
             // button6
             // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Location = new System.Drawing.Point(111, 232);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
@@ -192,6 +204,7 @@
             // 
             // button7
             // 
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Location = new System.Drawing.Point(111, 278);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(40, 40);
@@ -202,6 +215,7 @@
             // 
             // button8
             // 
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Location = new System.Drawing.Point(111, 319);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 40);
@@ -212,6 +226,7 @@
             // 
             // button9
             // 
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Location = new System.Drawing.Point(111, 365);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(40, 40);
@@ -222,6 +237,7 @@
             // 
             // button10
             // 
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Location = new System.Drawing.Point(111, 411);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(40, 40);
@@ -232,6 +248,7 @@
             // 
             // button11
             // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button11.Location = new System.Drawing.Point(157, 12);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(40, 40);
@@ -242,6 +259,7 @@
             // 
             // button12
             // 
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.Location = new System.Drawing.Point(157, 53);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(40, 40);
@@ -252,6 +270,7 @@
             // 
             // button13
             // 
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.Location = new System.Drawing.Point(157, 99);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(40, 40);
@@ -262,6 +281,7 @@
             // 
             // button14
             // 
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.Location = new System.Drawing.Point(157, 145);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(40, 40);
@@ -272,6 +292,7 @@
             // 
             // button15
             // 
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.Location = new System.Drawing.Point(157, 191);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 40);
@@ -282,6 +303,7 @@
             // 
             // button16
             // 
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button16.Location = new System.Drawing.Point(157, 232);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 40);
@@ -292,6 +314,7 @@
             // 
             // button17
             // 
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button17.Location = new System.Drawing.Point(157, 278);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
@@ -302,6 +325,7 @@
             // 
             // button18
             // 
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button18.Location = new System.Drawing.Point(157, 319);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
@@ -312,6 +336,7 @@
             // 
             // button19
             // 
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button19.Location = new System.Drawing.Point(157, 365);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(40, 40);
@@ -322,6 +347,7 @@
             // 
             // button20
             // 
+            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button20.Location = new System.Drawing.Point(157, 411);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(40, 40);
@@ -332,6 +358,7 @@
             // 
             // button21
             // 
+            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button21.Location = new System.Drawing.Point(203, 12);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(40, 40);
@@ -342,6 +369,7 @@
             // 
             // button22
             // 
+            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button22.Location = new System.Drawing.Point(203, 53);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(40, 40);
@@ -352,6 +380,7 @@
             // 
             // button23
             // 
+            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button23.Location = new System.Drawing.Point(203, 99);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(40, 40);
@@ -362,6 +391,7 @@
             // 
             // button24
             // 
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button24.Location = new System.Drawing.Point(203, 145);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(40, 40);
@@ -372,6 +402,7 @@
             // 
             // button25
             // 
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button25.Location = new System.Drawing.Point(203, 191);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(40, 40);
@@ -382,6 +413,7 @@
             // 
             // button26
             // 
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button26.Location = new System.Drawing.Point(203, 232);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(40, 40);
@@ -392,6 +424,7 @@
             // 
             // button27
             // 
+            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button27.Location = new System.Drawing.Point(203, 278);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(40, 40);
@@ -402,7 +435,8 @@
             // 
             // button28
             // 
-            this.button28.Location = new System.Drawing.Point(203, 319);
+            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button28.Location = new System.Drawing.Point(203, 324);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(40, 40);
             this.button28.TabIndex = 22;
@@ -412,6 +446,7 @@
             // 
             // button29
             // 
+            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button29.Location = new System.Drawing.Point(203, 365);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(40, 40);
@@ -422,6 +457,7 @@
             // 
             // button30
             // 
+            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button30.Location = new System.Drawing.Point(203, 411);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(40, 40);
@@ -432,6 +468,7 @@
             // 
             // button31
             // 
+            this.button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button31.Location = new System.Drawing.Point(249, 12);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(40, 40);
@@ -442,6 +479,7 @@
             // 
             // button32
             // 
+            this.button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button32.Location = new System.Drawing.Point(249, 53);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(40, 40);
@@ -452,6 +490,7 @@
             // 
             // button33
             // 
+            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button33.Location = new System.Drawing.Point(249, 99);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(40, 40);
@@ -462,6 +501,7 @@
             // 
             // button34
             // 
+            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button34.Location = new System.Drawing.Point(249, 145);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(40, 40);
@@ -472,6 +512,7 @@
             // 
             // button35
             // 
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button35.Location = new System.Drawing.Point(249, 191);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(40, 40);
@@ -482,6 +523,7 @@
             // 
             // button36
             // 
+            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button36.Location = new System.Drawing.Point(249, 232);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(40, 40);
@@ -492,6 +534,7 @@
             // 
             // button37
             // 
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button37.Location = new System.Drawing.Point(249, 278);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(40, 40);
@@ -502,6 +545,7 @@
             // 
             // button38
             // 
+            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button38.Location = new System.Drawing.Point(249, 319);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(40, 40);
@@ -512,6 +556,7 @@
             // 
             // button39
             // 
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button39.Location = new System.Drawing.Point(249, 365);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(40, 40);
@@ -522,6 +567,7 @@
             // 
             // button40
             // 
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button40.Location = new System.Drawing.Point(249, 411);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(40, 40);
@@ -532,6 +578,7 @@
             // 
             // button41
             // 
+            this.button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button41.Location = new System.Drawing.Point(295, 12);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(40, 40);
@@ -542,6 +589,7 @@
             // 
             // button42
             // 
+            this.button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button42.Location = new System.Drawing.Point(295, 53);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(40, 40);
@@ -552,6 +600,7 @@
             // 
             // button43
             // 
+            this.button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button43.Location = new System.Drawing.Point(295, 99);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(40, 40);
@@ -562,6 +611,7 @@
             // 
             // button44
             // 
+            this.button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button44.Location = new System.Drawing.Point(295, 145);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(40, 40);
@@ -572,6 +622,7 @@
             // 
             // button45
             // 
+            this.button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button45.Location = new System.Drawing.Point(295, 191);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(40, 40);
@@ -582,6 +633,7 @@
             // 
             // button46
             // 
+            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button46.Location = new System.Drawing.Point(295, 232);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(40, 40);
@@ -592,6 +644,7 @@
             // 
             // button47
             // 
+            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button47.Location = new System.Drawing.Point(295, 278);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(40, 40);
@@ -602,6 +655,7 @@
             // 
             // button48
             // 
+            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button48.Location = new System.Drawing.Point(295, 319);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(40, 40);
@@ -612,6 +666,7 @@
             // 
             // button49
             // 
+            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button49.Location = new System.Drawing.Point(295, 365);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(40, 40);
@@ -622,6 +677,7 @@
             // 
             // button50
             // 
+            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button50.Location = new System.Drawing.Point(295, 411);
             this.button50.Name = "button50";
             this.button50.Size = new System.Drawing.Size(40, 40);
@@ -632,6 +688,7 @@
             // 
             // button51
             // 
+            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button51.Location = new System.Drawing.Point(341, 12);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(40, 40);
@@ -642,6 +699,7 @@
             // 
             // button52
             // 
+            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button52.Location = new System.Drawing.Point(341, 53);
             this.button52.Name = "button52";
             this.button52.Size = new System.Drawing.Size(40, 40);
@@ -652,6 +710,7 @@
             // 
             // button53
             // 
+            this.button53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button53.Location = new System.Drawing.Point(341, 99);
             this.button53.Name = "button53";
             this.button53.Size = new System.Drawing.Size(40, 40);
@@ -662,6 +721,7 @@
             // 
             // button54
             // 
+            this.button54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button54.Location = new System.Drawing.Point(341, 145);
             this.button54.Name = "button54";
             this.button54.Size = new System.Drawing.Size(40, 40);
@@ -672,6 +732,7 @@
             // 
             // button55
             // 
+            this.button55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button55.Location = new System.Drawing.Point(341, 191);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(40, 40);
@@ -682,6 +743,7 @@
             // 
             // button56
             // 
+            this.button56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button56.Location = new System.Drawing.Point(341, 232);
             this.button56.Name = "button56";
             this.button56.Size = new System.Drawing.Size(40, 40);
@@ -692,6 +754,7 @@
             // 
             // button57
             // 
+            this.button57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button57.Location = new System.Drawing.Point(341, 278);
             this.button57.Name = "button57";
             this.button57.Size = new System.Drawing.Size(40, 40);
@@ -702,6 +765,7 @@
             // 
             // button58
             // 
+            this.button58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button58.Location = new System.Drawing.Point(341, 319);
             this.button58.Name = "button58";
             this.button58.Size = new System.Drawing.Size(40, 40);
@@ -712,6 +776,7 @@
             // 
             // button59
             // 
+            this.button59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button59.Location = new System.Drawing.Point(341, 365);
             this.button59.Name = "button59";
             this.button59.Size = new System.Drawing.Size(40, 40);
@@ -722,6 +787,7 @@
             // 
             // button60
             // 
+            this.button60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button60.Location = new System.Drawing.Point(341, 411);
             this.button60.Name = "button60";
             this.button60.Size = new System.Drawing.Size(40, 40);
@@ -732,6 +798,7 @@
             // 
             // button61
             // 
+            this.button61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button61.Location = new System.Drawing.Point(387, 12);
             this.button61.Name = "button61";
             this.button61.Size = new System.Drawing.Size(40, 40);
@@ -742,6 +809,7 @@
             // 
             // button62
             // 
+            this.button62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button62.Location = new System.Drawing.Point(387, 53);
             this.button62.Name = "button62";
             this.button62.Size = new System.Drawing.Size(40, 40);
@@ -752,6 +820,7 @@
             // 
             // button63
             // 
+            this.button63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button63.Location = new System.Drawing.Point(387, 99);
             this.button63.Name = "button63";
             this.button63.Size = new System.Drawing.Size(40, 40);
@@ -762,6 +831,7 @@
             // 
             // button64
             // 
+            this.button64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button64.Location = new System.Drawing.Point(387, 145);
             this.button64.Name = "button64";
             this.button64.Size = new System.Drawing.Size(40, 40);
@@ -772,6 +842,7 @@
             // 
             // button65
             // 
+            this.button65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button65.Location = new System.Drawing.Point(387, 191);
             this.button65.Name = "button65";
             this.button65.Size = new System.Drawing.Size(40, 40);
@@ -782,6 +853,7 @@
             // 
             // button66
             // 
+            this.button66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button66.Location = new System.Drawing.Point(387, 232);
             this.button66.Name = "button66";
             this.button66.Size = new System.Drawing.Size(40, 40);
@@ -792,6 +864,7 @@
             // 
             // button67
             // 
+            this.button67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button67.Location = new System.Drawing.Point(387, 278);
             this.button67.Name = "button67";
             this.button67.Size = new System.Drawing.Size(40, 40);
@@ -802,6 +875,7 @@
             // 
             // button68
             // 
+            this.button68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button68.Location = new System.Drawing.Point(387, 319);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(40, 40);
@@ -812,6 +886,7 @@
             // 
             // button69
             // 
+            this.button69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button69.Location = new System.Drawing.Point(387, 365);
             this.button69.Name = "button69";
             this.button69.Size = new System.Drawing.Size(40, 40);
@@ -822,6 +897,7 @@
             // 
             // button70
             // 
+            this.button70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button70.Location = new System.Drawing.Point(387, 411);
             this.button70.Name = "button70";
             this.button70.Size = new System.Drawing.Size(40, 40);
@@ -832,6 +908,7 @@
             // 
             // button71
             // 
+            this.button71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button71.Location = new System.Drawing.Point(433, 12);
             this.button71.Name = "button71";
             this.button71.Size = new System.Drawing.Size(40, 40);
@@ -842,6 +919,7 @@
             // 
             // button72
             // 
+            this.button72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button72.Location = new System.Drawing.Point(433, 53);
             this.button72.Name = "button72";
             this.button72.Size = new System.Drawing.Size(40, 40);
@@ -852,6 +930,7 @@
             // 
             // button73
             // 
+            this.button73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button73.Location = new System.Drawing.Point(433, 99);
             this.button73.Name = "button73";
             this.button73.Size = new System.Drawing.Size(40, 40);
@@ -862,6 +941,7 @@
             // 
             // button74
             // 
+            this.button74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button74.Location = new System.Drawing.Point(433, 145);
             this.button74.Name = "button74";
             this.button74.Size = new System.Drawing.Size(40, 40);
@@ -872,6 +952,7 @@
             // 
             // button75
             // 
+            this.button75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button75.Location = new System.Drawing.Point(433, 191);
             this.button75.Name = "button75";
             this.button75.Size = new System.Drawing.Size(40, 40);
@@ -882,6 +963,7 @@
             // 
             // button76
             // 
+            this.button76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button76.Location = new System.Drawing.Point(433, 232);
             this.button76.Name = "button76";
             this.button76.Size = new System.Drawing.Size(40, 40);
@@ -892,6 +974,7 @@
             // 
             // button77
             // 
+            this.button77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button77.Location = new System.Drawing.Point(433, 278);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(40, 40);
@@ -902,6 +985,7 @@
             // 
             // button78
             // 
+            this.button78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button78.Location = new System.Drawing.Point(433, 319);
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(40, 40);
@@ -912,6 +996,7 @@
             // 
             // button79
             // 
+            this.button79.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button79.Location = new System.Drawing.Point(433, 365);
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(40, 40);
@@ -922,6 +1007,7 @@
             // 
             // button80
             // 
+            this.button80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button80.Location = new System.Drawing.Point(433, 411);
             this.button80.Name = "button80";
             this.button80.Size = new System.Drawing.Size(40, 40);
@@ -932,6 +1018,7 @@
             // 
             // button81
             // 
+            this.button81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button81.Location = new System.Drawing.Point(479, 12);
             this.button81.Name = "button81";
             this.button81.Size = new System.Drawing.Size(40, 40);
@@ -942,6 +1029,7 @@
             // 
             // button82
             // 
+            this.button82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button82.Location = new System.Drawing.Point(479, 53);
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(40, 40);
@@ -952,6 +1040,7 @@
             // 
             // button83
             // 
+            this.button83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button83.Location = new System.Drawing.Point(479, 99);
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(40, 40);
@@ -962,6 +1051,7 @@
             // 
             // button84
             // 
+            this.button84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button84.Location = new System.Drawing.Point(479, 145);
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(40, 40);
@@ -972,6 +1062,7 @@
             // 
             // button85
             // 
+            this.button85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button85.Location = new System.Drawing.Point(479, 191);
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(40, 40);
@@ -982,6 +1073,7 @@
             // 
             // button86
             // 
+            this.button86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button86.Location = new System.Drawing.Point(479, 232);
             this.button86.Name = "button86";
             this.button86.Size = new System.Drawing.Size(40, 40);
@@ -992,6 +1084,7 @@
             // 
             // button87
             // 
+            this.button87.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button87.Location = new System.Drawing.Point(479, 278);
             this.button87.Name = "button87";
             this.button87.Size = new System.Drawing.Size(40, 40);
@@ -1002,6 +1095,7 @@
             // 
             // button88
             // 
+            this.button88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button88.Location = new System.Drawing.Point(479, 319);
             this.button88.Name = "button88";
             this.button88.Size = new System.Drawing.Size(40, 40);
@@ -1012,6 +1106,7 @@
             // 
             // button89
             // 
+            this.button89.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button89.Location = new System.Drawing.Point(479, 365);
             this.button89.Name = "button89";
             this.button89.Size = new System.Drawing.Size(40, 40);
@@ -1022,6 +1117,7 @@
             // 
             // button90
             // 
+            this.button90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button90.Location = new System.Drawing.Point(479, 411);
             this.button90.Name = "button90";
             this.button90.Size = new System.Drawing.Size(40, 40);
@@ -1032,6 +1128,7 @@
             // 
             // button91
             // 
+            this.button91.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button91.Location = new System.Drawing.Point(525, 12);
             this.button91.Name = "button91";
             this.button91.Size = new System.Drawing.Size(40, 40);
@@ -1042,6 +1139,7 @@
             // 
             // button92
             // 
+            this.button92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button92.Location = new System.Drawing.Point(525, 53);
             this.button92.Name = "button92";
             this.button92.Size = new System.Drawing.Size(40, 40);
@@ -1052,6 +1150,7 @@
             // 
             // button93
             // 
+            this.button93.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button93.Location = new System.Drawing.Point(525, 99);
             this.button93.Name = "button93";
             this.button93.Size = new System.Drawing.Size(40, 40);
@@ -1062,16 +1161,19 @@
             // 
             // button94
             // 
+            this.button94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button94.Location = new System.Drawing.Point(525, 145);
             this.button94.Name = "button94";
             this.button94.Size = new System.Drawing.Size(40, 40);
             this.button94.TabIndex = 96;
             this.button94.Text = " ";
             this.button94.UseVisualStyleBackColor = true;
+            this.button94.UseWaitCursor = true;
             this.button94.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button91_MouseDown);
             // 
             // button95
             // 
+            this.button95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button95.Location = new System.Drawing.Point(525, 191);
             this.button95.Name = "button95";
             this.button95.Size = new System.Drawing.Size(40, 40);
@@ -1082,6 +1184,7 @@
             // 
             // button96
             // 
+            this.button96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button96.Location = new System.Drawing.Point(525, 232);
             this.button96.Name = "button96";
             this.button96.Size = new System.Drawing.Size(40, 40);
@@ -1092,6 +1195,7 @@
             // 
             // button97
             // 
+            this.button97.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button97.Location = new System.Drawing.Point(525, 278);
             this.button97.Name = "button97";
             this.button97.Size = new System.Drawing.Size(40, 40);
@@ -1102,6 +1206,7 @@
             // 
             // button98
             // 
+            this.button98.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button98.Location = new System.Drawing.Point(525, 319);
             this.button98.Name = "button98";
             this.button98.Size = new System.Drawing.Size(40, 40);
@@ -1112,6 +1217,7 @@
             // 
             // button99
             // 
+            this.button99.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button99.Location = new System.Drawing.Point(525, 365);
             this.button99.Name = "button99";
             this.button99.Size = new System.Drawing.Size(40, 40);
@@ -1122,6 +1228,7 @@
             // 
             // button100
             // 
+            this.button100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button100.Location = new System.Drawing.Point(525, 411);
             this.button100.Name = "button100";
             this.button100.Size = new System.Drawing.Size(40, 40);
@@ -1130,11 +1237,45 @@
             this.button100.UseVisualStyleBackColor = true;
             this.button100.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button91_MouseDown);
             // 
+            // Reset
+            // 
+            this.Reset.Location = new System.Drawing.Point(628, 303);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(75, 23);
+            this.Reset.TabIndex = 101;
+            this.Reset.Text = "Reset";
+            this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
+            // Flagbox
+            // 
+            this.Flagbox.Image = ((System.Drawing.Image)(resources.GetObject("Flagbox.Image")));
+            this.Flagbox.Location = new System.Drawing.Point(628, 155);
+            this.Flagbox.Name = "Flagbox";
+            this.Flagbox.Size = new System.Drawing.Size(100, 50);
+            this.Flagbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Flagbox.TabIndex = 102;
+            this.Flagbox.TabStop = false;
+            this.Flagbox.Visible = false;
+            // 
+            // Minebox
+            // 
+            this.Minebox.Image = ((System.Drawing.Image)(resources.GetObject("Minebox.Image")));
+            this.Minebox.Location = new System.Drawing.Point(628, 53);
+            this.Minebox.Name = "Minebox";
+            this.Minebox.Size = new System.Drawing.Size(100, 50);
+            this.Minebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Minebox.TabIndex = 103;
+            this.Minebox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Minebox);
+            this.Controls.Add(this.Flagbox);
+            this.Controls.Add(this.Reset);
             this.Controls.Add(this.button91);
             this.Controls.Add(this.button92);
             this.Controls.Add(this.button93);
@@ -1237,6 +1378,8 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.Flagbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1343,6 +1486,9 @@
         private System.Windows.Forms.Button button98;
         private System.Windows.Forms.Button button99;
         private System.Windows.Forms.Button button100;
+        private System.Windows.Forms.Button Reset;
+        private System.Windows.Forms.PictureBox Flagbox;
+        private System.Windows.Forms.PictureBox Minebox;
     }
 }
 
