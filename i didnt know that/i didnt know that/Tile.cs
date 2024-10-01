@@ -35,20 +35,20 @@ namespace i_didnt_know_that
           
         }
         public Boolean getmine() { return m_mine; }
-        public void setdug(bool b) 
+        public void setdug() 
         { 
             m_dug = true;
             if (m_mine)
                 m_b.BackgroundImage = m_mineimage;
         }
-        public void setflag(bool b)
+        public void setflag()
         {
-            m_flag =! m_flag;
+            m_flag = !m_flag;
             if (m_flag)
                 m_b.BackgroundImage = m_flagimage;
             else
                 m_b.BackgroundImage = null;
         }
-
+     
     }
 }

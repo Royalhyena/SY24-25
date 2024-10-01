@@ -32,15 +32,27 @@ namespace i_didnt_know_that
                 btnGrid[i] = (Button)Controls["button" + (i + 1)];
                 tilegrid[i] = new Tile(btnGrid[i]);
                 tilegrid[i].setflagimage(Flagbox.Image);
-                //tilegrid[i].setflag(false);
+             //   tilegrid[i].setflag(false);
                 tilegrid[i].setmineimage(Minebox.Image);
-                tilegrid[i].setmine(true);
+               // tilegrid[i].setmine(true);
             }
             craeteminee(5);
+            
+            for (int r = 1; r < 10; r++)
+            {
+                for (int c = 1; c < 10; c++)
+                {
+                    tilegrid[getindex(getButton(r, c))].setnearby(countadjaceent(r, c));
+                }
+                // int idx = getindex(getButton(2, 3));
+                // btnGrid[idx].BackColor = Color.Green;
+            }
         }
         private Button getButton(int r, int c)
-        {
-            return (Button)getButton(r, c);
+        {            
+            int idx = (c - 1) * 10 + (r);
+            return (Button)btnGrid[idx];
+
         }
         private int getindex(Button b)
         {
@@ -60,30 +72,54 @@ namespace i_didnt_know_that
 
 
         }
+        private int countadjaceent(int r, int c)
+        {
+            /**
+            for (int x = -1; x <= 1; x++)
+            {
+                for (int y = -1; y <= 1; y++)
+                {
+                    getButton(r + x, c + y).BackColor = Color.HotPink;
+                }
+            }
+            **/
+            if (r > 1 && c > 1) getButton(r - 1, c - 1).BackColor = Color.Orange;
+            if (r > 1) getButton(r - 1, c).BackColor = Color.Orange;
+            if (r > 1 && c < 10) getButton(r - 1, c + 1).BackColor = Color.Orange;
+            if (c > 1) getButton(r, c - 1).BackColor = Color.Orange;
+            if (r > 1 && c < 10) getButton(r + 1, c - 1).BackColor = Color.Orange;
+            if (r < 10 && c > 1) getButton(r, c + 1).BackColor = Color.Orange;
+            if (r < 10) getButton(r + 1, c).BackColor = Color.Orange;
+            if (r < 10 && c < 10) getButton(r + 1, c + 1).BackColor = Color.Orange;
+            return 0;
+        }
         private void craeteminee(int numMines)
         {
            
-            int minecount = 0;
+           int minecount = 0;
             // until we have enough minrs
-            while (minecount < numMines)
-            {
-            // generate num from 1-100
-               int rnum = random.Next(0,100);
+          while (minecount < numMines)
+           {
+          //  // generate num from 1-100
+                int rnum = random.Next(0,100);
             // set mine on that tile if there is not all ready a min
             if (tilegrid[rnum].getmine() == false)
                 {
                     minecount++;
                     tilegrid[rnum].setmine(true);
 
-                }
+                } 
             }
            
         }
-        private void setlogankeycount()
+        private void setcount()
         {
-            for (int i = 0; i < 100; i++)
+            for (int r = 1; r < 10; r++)
             {
-                tilegrid[i].setnearby(1);
+                for (int c = 1; c < 10; c++)
+                {
+                    getButton(r, c).BackColor = Color.Honeydew;
+                }
             }
         }
         private void Reset_Click(object sender, EventArgs e)
