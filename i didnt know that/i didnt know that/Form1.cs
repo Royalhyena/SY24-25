@@ -67,9 +67,10 @@ namespace i_didnt_know_that
             Tile t = tilegrid[getindex(b)];
             if (e.Button == MouseButtons.Right)
                 t.setflag();
-            else
+            if (e.Button == MouseButtons.Left)
+            {
                 t.setdug();
-
+            }
 
         }
         private int countadjaceent(int r, int c)

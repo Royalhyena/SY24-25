@@ -32,6 +32,8 @@ namespace i_didnt_know_that
         public void setmine(bool b)
         {
             m_mine = b;
+            m_b.BackgroundImage = m_mineimage;
+            m_b.BackColor= Color.DarkGoldenrod;
           
         }
         public Boolean getmine() { return m_mine; }
