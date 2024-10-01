@@ -14,11 +14,11 @@ namespace i_didnt_know_that
 
     public partial class Form1 : Form
     {
-        
+
         Button[] btnGrid = new Button[100];
         Tile[] tilegrid = new Tile[100];
         Random random = new Random();
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -32,15 +32,15 @@ namespace i_didnt_know_that
                 btnGrid[i] = (Button)Controls["button" + (i + 1)];
                 tilegrid[i] = new Tile(btnGrid[i]);
                 tilegrid[i].setflagimage(Flagbox.Image);
-             //   tilegrid[i].setflag(false);
+                //   tilegrid[i].setflag(false);
                 tilegrid[i].setmineimage(Minebox.Image);
-               // tilegrid[i].setmine(true);
+                // tilegrid[i].setmine(true);
             }
             craeteminee(5);
-            
-            for (int r = 1; r < 10; r++)
+
+            for (int r = 1; r < 11; r++)
             {
-                for (int c = 1; c < 10; c++)
+                for (int c = 1; c < 11; c++)
                 {
                     tilegrid[getindex(getButton(r, c))].setnearby(countadjaceent(r, c));
                 }
@@ -49,8 +49,8 @@ namespace i_didnt_know_that
             }
         }
         private Button getButton(int r, int c)
-        {            
-            int idx = (c - 1) * 10 + (r);
+        {
+            int idx = (c - 1) * 10 + (r - 1);
             return (Button)btnGrid[idx];
 
         }
@@ -83,34 +83,61 @@ namespace i_didnt_know_that
                 }
             }
             **/
-            if (r > 1 && c > 1) getButton(r - 1, c - 1).BackColor = Color.Orange;
-            if (r > 1) getButton(r - 1, c).BackColor = Color.Orange;
-            if (r > 1 && c < 10) getButton(r - 1, c + 1).BackColor = Color.Orange;
-            if (c > 1) getButton(r, c - 1).BackColor = Color.Orange;
-            if (r > 1 && c < 10) getButton(r + 1, c - 1).BackColor = Color.Orange;
-            if (r < 10 && c > 1) getButton(r, c + 1).BackColor = Color.Orange;
-            if (r < 10) getButton(r + 1, c).BackColor = Color.Orange;
-            if (r < 10 && c < 10) getButton(r + 1, c + 1).BackColor = Color.Orange;
-            return 0;
+            int count = 0;
+            if (r > 1 && c > 1)
+            {
+                if (tilegrid[getindex(getButton(r - 1, c - 1))].getmine()) count++;
+            }
+            if (r > 1)
+            {
+                if (tilegrid[getindex(getButton(r - 1, c))].getmine()) count++;
+            }
+            if (r > 1 && c < 10)
+            {
+                if (tilegrid[getindex(getButton(r - 1, c + 1))].getmine()) count++;
+            }
+            if (c > 1)
+            {
+                if (tilegrid[getindex(getButton(r, c - 1))].getmine()) count++;
+            }
+            if (c < 10)
+            {
+                if (tilegrid[getindex(getButton(r, c + 1))].getmine()) count++;
+            }
+            if (r < 10 && c > 1)
+            {
+                if (tilegrid[getindex(getButton(r + 1, c - 1))].getmine()) count++;
+            }
+            if (r < 10)
+            {
+                if (tilegrid[getindex(getButton(r + 1, c))].getmine()) count++;
+            }
+            if (r < 10 && c < 10)
+            {
+                if (tilegrid[getindex(getButton(r + 1, c + 1))].getmine()) count++;
+            }
+            return count;
         }
+
+
         private void craeteminee(int numMines)
         {
-           
-           int minecount = 0;
+
+            int minecount = 0;
             // until we have enough minrs
-          while (minecount < numMines)
-           {
-          //  // generate num from 1-100
-                int rnum = random.Next(0,100);
-            // set mine on that tile if there is not all ready a min
-            if (tilegrid[rnum].getmine() == false)
+            while (minecount < numMines)
+            {
+                //  // generate num from 1-100
+                int rnum = random.Next(0, 100);
+                // set mine on that tile if there is not all ready a min
+                if (tilegrid[rnum].getmine() == false)
                 {
                     minecount++;
                     tilegrid[rnum].setmine(true);
 
-                } 
+                }
             }
-           
+
         }
         private void setcount()
         {
@@ -125,7 +152,7 @@ namespace i_didnt_know_that
         private void Reset_Click(object sender, EventArgs e)
         {
             ResetGame();
-            
+
 
         }
     }

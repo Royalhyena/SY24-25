@@ -26,7 +26,7 @@ namespace i_didnt_know_that
             m_b.BackColor = Color.Green;
 
         }
-        public void setnearby(int n) { m_nearby = n; }
+        public void setnearby(int n) { m_nearby = n; m_b.Text = m_nearby.ToString(); }
         public void setflagimage(Image flagimage) { m_flagimage = flagimage; }
         public void setmineimage(Image mineimage) { m_mineimage = mineimage; }
         public void setmine(bool b)
