@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace i_didnt_know_that
 {
-    internal class Tile
+    internal class Tile : Form1
     {
         private Button m_b;
         private bool m_flag;
@@ -19,7 +19,7 @@ namespace i_didnt_know_that
         private int m_nearby;
         private Image m_flagimage;
         private Image m_mineimage;
-
+       
         public Tile(Button buttonB)
         {
             m_b = buttonB;
@@ -38,19 +38,35 @@ namespace i_didnt_know_that
         }
         public Boolean getmine() { return m_mine; }
         public void setdug() 
-        { 
+        {
+            m_b.BackColor = Color.White;
             m_dug = true;
+            
+            char[] idx = getindex(m_b).ToString().ToCharArray();
+            int idxX = idx[0] - 48;
+            int idxY = idx[1] - 48;
+            countadjaceent(idxX, idxY);
+            
             if (m_mine)
                 m_b.BackgroundImage = m_mineimage;
         }
+
+        public bool GetDug() { return m_dug; }
+
         public void setflag()
-        {
-            m_flag = !m_flag;
-            if (m_flag)
-                m_b.BackgroundImage = m_flagimage;
-            else
-                m_b.BackgroundImage = null;
+        { 
+            if (!m_dug)
+            { 
+                m_flag = !m_flag;
+                if (m_flag)
+                { 
+                    m_b.BackgroundImage = m_flagimage;
+                }
+                else
+                {
+                    m_b.BackgroundImage = null;
+                }
+            }
         }
-     
     }
 }

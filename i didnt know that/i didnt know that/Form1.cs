@@ -18,13 +18,19 @@ namespace i_didnt_know_that
         Button[] btnGrid = new Button[100];
         Tile[] tilegrid = new Tile[100];
         Random random = new Random();
-
+        int flagcount = 0;
+        int minecount = 0;
+        int timer = 0;
         public Form1()
         {
             InitializeComponent();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
             ResetGame();
         }
+
         void ResetGame()
         {
             for (int i = 0; i < 100; i++)
@@ -36,45 +42,96 @@ namespace i_didnt_know_that
                 tilegrid[i].setmineimage(Minebox.Image);
                 // tilegrid[i].setmine(true);
             }
-            craeteminee(5);
+            craeteminee(10);
 
-            for (int r = 1; r < 11; r++)
-            {
-                for (int c = 1; c < 11; c++)
-                {
-                    tilegrid[getindex(getButton(r, c))].setnearby(countadjaceent(r, c));
-                }
-                // int idx = getindex(getButton(2, 3));
-                // btnGrid[idx].BackColor = Color.Green;
-            }
+            timer1.Enabled = true;
+
+            /** for (int r = 1; r < 11; r++)
+             {
+                 for (int c = 1; c < 11; c++)
+                 {
+                     tilegrid[getindex(getButton(r, c))].setnearby(countadjaceent(r, c));
+                 }
+                 // int idx = getindex(getButton(2, 3));
+                 // btnGrid[idx].BackColor = Color.Green;
+             }**/
+
         }
         private Button getButton(int r, int c)
         {
-            int idx = (c - 1) * 10 + (r - 1);
-            return (Button)btnGrid[idx];
+            int idx = (c - 1) * 10 + (r - 1);  // (row, col) to index calculation
+            return btnGrid[idx];
+        }
 
-        }
-        private int getindex(Button b)
+        public int getindex(Button b)
         {
-            string tmp = b.Name.Substring(6);
-            int retval = 0;
-            int.TryParse(tmp, out retval);
-            return retval - 1;
+            // Find the row and column of the button in the grid
+            for (int r = 1; r <= 10; r++)
+            {
+                for (int c = 1; c <= 10; c++)
+                {
+                    if (getButton(r, c) == b)
+                    {
+                        // Return the index calculated from row and column
+                        return (c - 1) * 10 + (r - 1);
+                    }
+                }
+            }
+            return -1; // Return -1 if the button wasn't found
         }
+
         private void button91_MouseDown(object sender, MouseEventArgs e)
         {
             Button b = sender as Button;
-            Tile t = tilegrid[getindex(b)];
+            Tile t = tilegrid[getindex((Button)sender)];
             if (e.Button == MouseButtons.Right)
+            {
                 t.setflag();
+                flagcount++;
+            }
+            if (flagcount == minecount)
+            {
+                timer1.Enabled = false;
+            }
             if (e.Button == MouseButtons.Left)
             {
                 t.setdug();
+                if (b.Text == "0")
+                {
+                    AutoDig(getindex((Button)sender));
+                }
             }
-
         }
-        private int countadjaceent(int r, int c)
+
+        private async Task AutoDig(int idx)
         {
+            await Task.Yield();
+            for (int x = -1; x <= 1; x++)
+            {
+                for (int y = -1; y <= 1; y++)
+                {
+                    int xy = (x * 10) + y;
+                    if (idx + xy < 100 && idx + xy >= 0)
+                    {
+                        Tile t = tilegrid[idx + xy];
+                        Button btn = btnGrid[idx + xy];
+                        if (btn.Text == "0")
+                        {
+                            if (!t.GetDug())
+                            {
+                                AutoDig(getindex(btn));
+                            }
+                        }
+                        t.setdug();
+                    }
+                }
+            }
+        }
+
+        protected int countadjaceent(int r, int c)
+        {
+
+
             /**
             for (int x = -1; x <= 1; x++)
             {
@@ -124,7 +181,7 @@ namespace i_didnt_know_that
         private void craeteminee(int numMines)
         {
 
-            int minecount = 0;
+
             // until we have enough minrs
             while (minecount < numMines)
             {
@@ -138,6 +195,7 @@ namespace i_didnt_know_that
 
                 }
             }
+
 
         }
         private void setcount()
@@ -156,6 +214,14 @@ namespace i_didnt_know_that
 
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer++;
+            label1.Text = timer.ToString();
+        }
+
+        
     }
 }
 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -130,6 +130,8 @@
             this.button99 = new System.Windows.Forms.Button();
             this.button100 = new System.Windows.Forms.Button();
             this.Reset = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.Flagbox = new System.Windows.Forms.PictureBox();
             this.Minebox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Flagbox)).BeginInit();
@@ -1247,26 +1249,42 @@
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 104;
+            this.label1.Text = "label1";
+            // 
             // Flagbox
             // 
-            this.Flagbox.Image = ((System.Drawing.Image)(resources.GetObject("Flagbox.Image")));
-            this.Flagbox.Location = new System.Drawing.Point(628, 155);
+            this.Flagbox.Image = global::i_didnt_know_that.Properties.Resources.flaggg;
+            this.Flagbox.Location = new System.Drawing.Point(611, 82);
             this.Flagbox.Name = "Flagbox";
             this.Flagbox.Size = new System.Drawing.Size(100, 50);
             this.Flagbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Flagbox.TabIndex = 102;
+            this.Flagbox.TabIndex = 105;
             this.Flagbox.TabStop = false;
             this.Flagbox.Visible = false;
             // 
             // Minebox
             // 
-            this.Minebox.Image = ((System.Drawing.Image)(resources.GetObject("Minebox.Image")));
-            this.Minebox.Location = new System.Drawing.Point(628, 53);
+            this.Minebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Minebox.Image = global::i_didnt_know_that.Properties.Resources.Mine_;
+            this.Minebox.Location = new System.Drawing.Point(611, 145);
             this.Minebox.Name = "Minebox";
             this.Minebox.Size = new System.Drawing.Size(100, 50);
             this.Minebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Minebox.TabIndex = 103;
+            this.Minebox.TabIndex = 106;
             this.Minebox.TabStop = false;
+            this.Minebox.Visible = false;
             // 
             // Form1
             // 
@@ -1275,6 +1293,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Minebox);
             this.Controls.Add(this.Flagbox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.button91);
             this.Controls.Add(this.button92);
@@ -1378,9 +1397,11 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Flagbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minebox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1487,6 +1508,8 @@
         private System.Windows.Forms.Button button99;
         private System.Windows.Forms.Button button100;
         private System.Windows.Forms.Button Reset;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Flagbox;
         private System.Windows.Forms.PictureBox Minebox;
     }
