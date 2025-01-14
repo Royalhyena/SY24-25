@@ -21,6 +21,7 @@ namespace Binarian
         }
         private void calc()
         {
+            //git tested
             total = 0;
             if (bits[0] != 0) total += 1;
             if (bits[1] != 0) total += 2;
